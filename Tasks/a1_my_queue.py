@@ -4,6 +4,8 @@ My little Queue
 from typing import Any
 
 
+my_queue = []
+
 def enqueue(elem: Any) -> None:
     """
     Operation that add element to the end of the queue
@@ -11,7 +13,8 @@ def enqueue(elem: Any) -> None:
     :param elem: element to be added
     :return: Nothing
     """
-    print(elem)
+
+    my_queue.append(elem)
     return None
 
 
