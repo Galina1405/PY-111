@@ -44,6 +44,7 @@ def clear() -> None:
 
     :return: None
     """
+    my_stack.clear()
     return None
 
 
