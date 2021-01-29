@@ -21,7 +21,7 @@ def search_min_way():
         coast[i][0] += coast[i-1][0]
 
     for i in range(1, len(coast)):
-        for j in range(1, len(coast)):
+        for j in range(1, len(coast[0])):
             coast[i][j] += min(coast[i][j-1], coast[i-1][j])
             if coast[i][j - 1] <= coast[i - 1][j] and (i, j-1) != coords[-1]:
                 coords.append((i, j-1))
